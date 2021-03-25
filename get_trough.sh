@@ -11,6 +11,8 @@ set s_dd =    3; set e_dd =   15
 #
 mkdir -p ${dir}/trough/png
 mkdir -p ${dir}/trough/gif
+#
+set n_dd = ${s_dd}
 
 while ( ${s_yy} <= ${e_yy} ) 
 
@@ -32,7 +34,7 @@ sleep 0.1s
 
 @ s_dd = ${s_dd} + 1
 end
-convert -loop 0 -delay 50 ${dir}/trough/png/*.pdf ${dir}/trough/gif/${s_yy}${m0}${s_dd}-${e_dd}.gif
+convert -loop 0 -delay 50 ${dir}/trough/png/*.pdf ${dir}/trough/gif/${s_yy}${m0}${n_dd}-${e_dd}.gif
 
 @ s_mm = ${s_mm} + 1
 end

@@ -30,7 +30,7 @@ sleep 0.1s
 done # hr
 
 convert -loop 0 -delay 50 \
-${dir}/himawari/png/${YYYY}${MM}${day}/*.jpg ${dir}/himawari8/gif/${yyyy}${mon}${day}.gif
+${dir}/himawari8/png/${YYYY}${MM}${day}/*.jpg ${dir}/himawari8/gif/${yyyy}${mon}${day}.gif
 
 done #day
 

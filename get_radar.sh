@@ -30,7 +30,7 @@ sleep 0.1s
 done # hr
 
 convert -loop 0 -delay 50 \
-${dir}/radar/png/${YYYY}${MM}${day}/*.jpg ${dir}/radar/gif/${yyyy}${mon}${day}.gif
+${dir}/radar/png/${YYYY}${MM}${day}/*.jpg ${dir}/radar/gif/${YYYY}${MM}${day}.gif
 
 done #day
 

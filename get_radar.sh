@@ -20,7 +20,7 @@ mkdir -p ${dir}/radar/gif
 mkdir -p ${dir}/radar/png
 
 for day in ${DD[@]}; do
-mkdir -p ${dir}/radar/png/${YYYY}${MM}${DD}
+mkdir -p ${dir}/radar/png/${YYYY}${MM}${day}
 
 for hr in ${HH[@]}; do
 wget https://storage.tenki.jp/archive/radar/${YYYY}/${MM}/${day}/${hr}/00/00/area-3-large.jpg \

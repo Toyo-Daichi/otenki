@@ -20,7 +20,7 @@ mkdir -p ${dir}/himawari8/gif
 mkdir -p ${dir}/himawari8/png
 
 for day in ${DD[@]}; do
-mkdir -p ${dir}/himawari8/png/${YYYY}${MM}${DD}
+mkdir -p ${dir}/himawari8/png/${YYYY}${MM}${day}
 
 for hr in ${HH[@]}; do
 wget https://storage.tenki.jp/archive/satellite/${YYYY}/${MM}/${day}/${hr}/00/00/japan-near-large.jpg \
